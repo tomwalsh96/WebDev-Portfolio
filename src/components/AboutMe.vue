@@ -89,7 +89,7 @@
                         <p
                           class="text-center mt-5"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          {{ designer.blurb }}
                         </p>
                       </v-row>
                       <v-row
@@ -108,7 +108,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          UX, UI, Web, Logos
+                          <span
+                            v-for="(item, index) in designer.platforms" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                       <v-row
@@ -118,7 +123,7 @@
                           style="color: #6C63FF;"
                           class="text-center display-1 font-weight-medium mt-12"
                         >
-                          Tools:
+                          Resources:
                         </h1>
                       </v-row>
                       <v-row
@@ -127,8 +132,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          Figma<br>
-                          Balsamiq
+                          <span
+                            v-for="(item, index) in designer.resources" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                     </v-col>
@@ -168,7 +177,7 @@
                         <p
                           class="text-center mt-5"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          {{ developer.blurb }}
                         </p>
                       </v-row>
                       <v-row
@@ -178,7 +187,7 @@
                           style="color: #6C63FF;"
                           class="text-center display-1 font-weight-medium mt-12"
                         >
-                          Languages and Frameworks:
+                          Languages:
                         </h1>
                       </v-row>
                       <v-row
@@ -187,7 +196,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          HTML, CSS, Javascript, Vue, Python
+                          <span
+                            v-for="(item, index) in developer.languages" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                       <v-row
@@ -206,8 +220,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          VS Code<br>
-                          GitHub
+                          <span
+                            v-for="(item, index) in developer.tools" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                     </v-col>
@@ -263,7 +281,7 @@
                         <p
                           class="text-center mt-5"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          {{ designer.blurb }}
                         </p>
                       </v-row>
                       <v-row
@@ -282,7 +300,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          UX, UI, Web, Logos
+                          <span
+                            v-for="(item, index) in designer.platforms" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                       <v-row
@@ -292,7 +315,7 @@
                           style="color: #6C63FF;"
                           class="text-center display-1 font-weight-medium mt-12"
                         >
-                          Tools:
+                          Resources:
                         </h1>
                       </v-row>
                       <v-row
@@ -301,8 +324,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          Figma<br>
-                          Balsamiq
+                          <span
+                            v-for="(item, index) in designer.resources" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                     </v-col>
@@ -343,7 +370,7 @@
                         <p
                           class="text-center mt-5"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          {{ developer.blurb }}
                         </p>
                       </v-row>
                       <v-row
@@ -353,7 +380,7 @@
                           style="color: #6C63FF;"
                           class="text-center display-1 font-weight-medium mt-12"
                         >
-                          Languages and Frameworks:
+                          Languages:
                         </h1>
                       </v-row>
                       <v-row
@@ -362,7 +389,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          HTML, CSS, Javascript, Vue, Python
+                          <span
+                            v-for="(item, index) in developer.languages" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                       <v-row
@@ -381,8 +413,12 @@
                         <p
                           class="text-center mt-3"
                         >
-                          VS Code<br>
-                          GitHub
+                          <span
+                            v-for="(item, index) in developer.tools" :key="index"
+                          >
+                            {{ item }}
+                            <br>
+                          </span>
                         </p>
                       </v-row>
                     </v-col>
@@ -403,6 +439,23 @@
 <script>
 
 export default {
-  name: 'AboutMe'
+  name: 'AboutMe',
+  data: () => ({
+    designer: {
+      blurb: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+      platforms: ['Figma'],
+      resources: ['colorsinspo.com', 'fontfabric.com', 'logomoose.com', 'endlessicons.com', 'unsplash.com',
+        'reallygoodemails.com', 'freedesignresources.net', 'graphicburger.com', 'background.bg', 'compressor.io']
+    },
+    developer: {
+      blurb: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+      languages: ['HTML', 'CSS', 'Javascript', 'Python'],
+      tools: ['VS Code', 'GitHub', 'Vue', 'Vuetify']
+    }
+  })
 }
 </script>
